@@ -29,54 +29,86 @@
   </head>
   <body class="bg-[#111827] font-['Inter']">
     <main>
-      <section class="flex justify-between">
-        
-        
-            <!-- left container -->
-          <div class="mx-auto">
-            
-            <!-- logo -->
-            <div class="pt-4">
-              <img src="../Assets/images/logo.png" class="w-16" />
-            </div>
+      <section class="flex justify-between h-screen">
+        <!-- left container -->
+        <div class="mx-auto">
+          <!-- logo -->
+          <div class="pt-4">
+            <img src="../Assets/images/logo.png" class="w-16" />
+          </div>
 
-              <!-- login container -->
-            <div class="my-[50%]">
-              <h1 class="text-white text-[3rem] font-['UncutSans']">Welcome Back!</h1>
-              <div class="flex flex-col w-[23rem]">
-                <!-- email input -->
-                <label for="email" class="text-[#979EAA] font-medium mb-2">Email</label>
-                <input type="email" name="email" id="email" class="text-white font-medium bg-[#242D3C] px-2 py-2 border border-gray-600 focus:border-blue-500 focus:outline-none rounded mb-4">
-  
-                <!-- password input -->
-                <div class="flex justify-between items-center mb-2">
-                  <label for="password" class="text-[#979EAA] font-medium">Password</label>
-                  <p class="text-blue-600">Troubles?</p>
-                </div>
-                <input type="password" name="password" id="password" class="text-white font-medium bg-[#242D3C] px-2 py-2 border border-gray-600 focus:border-blue-500 focus:outline-none rounded">
-  
-                <!-- sign in button -->
-                <button class="text-center text-[1.2rem] text-white font-medium bg-gradient-to-b from-[#5EA2F9] to-[#2A68EC] px-2 py-2 border-none rounded-lg flex justify-center items-center gap-3 my-4 hover:bg-gradient-to-b hover:from-[#2A68EC] hover:to-[#2A68EC]">Sign In <img src="../Assets/images/icons/arrow.svg"></button>
-                
-                <!-- divider -->
-                <div class="flex justify-center items-center gap-2">
-                  <hr class="border border-[#373d47] w-full">
-                  <p class="text-[#979EAA] font-medium">Or</p>
-                  <hr class="border border-[#373d47] w-full">
-                </div>
-  
-                <!-- google sign in button -->
-                <button class="relative text-center text-[1.2rem] text-white font-medium bg-gradient-to-b from-[#F370B4] to-[#ec4b9b] px-2 py-2 border-none rounded-lg mt-4 mb-6 hover:bg-gradient-to-b hover:from-[#ec4b9b] hover:to-[#ec4b9b]"><img src="../Assets/images/icons/google.svg" class="absolute top-3.5 left-5">Continue With Google</button>
-  
-                <!-- sign up text -->
-                <p class="text-[#979EAA] font-medium">Don't you have an account? <a href="signup.html" class="text-blue-600">Sign Up</a></p>
+          <!-- login container -->
+          <div class="my-[50%]">
+            <h1 class="text-white text-[3rem] font-['UncutSans']">
+              Welcome Back!
+            </h1>
+            <div class="flex flex-col w-[23rem]">
+              <!-- email input -->
+              <label for="email" class="text-[#979EAA] font-medium mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="text-white font-medium bg-[#242D3C] px-2 py-2 border border-gray-600 focus:border-blue-500 focus:outline-none rounded mb-4"
+              />
+
+              <!-- password input -->
+              <div class="flex justify-between items-center mb-2">
+                <label for="password" class="text-[#979EAA] font-medium"
+                  >Password</label
+                >
+                <p class="text-blue-600">Troubles?</p>
               </div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="text-white font-medium bg-[#242D3C] px-2 py-2 border border-gray-600 focus:border-blue-500 focus:outline-none rounded"
+              />
+
+              <!-- sign in button -->
+              <button
+                class="text-center text-[1.2rem] text-white font-medium bg-gradient-to-b from-[#5EA2F9] to-[#2A68EC] px-2 py-2 border-none rounded-lg flex justify-center items-center gap-3 my-4 hover:bg-gradient-to-b hover:from-[#2A68EC] hover:to-[#2A68EC]"
+              >
+                Sign In <img src="../Assets/images/icons/arrow.svg" />
+              </button>
+
+              <!-- divider -->
+              <div class="flex justify-center items-center gap-2">
+                <hr class="border border-[#373d47] w-full" />
+                <p class="text-[#979EAA] font-medium">Or</p>
+                <hr class="border border-[#373d47] w-full" />
+              </div>
+
+              <!-- google sign in button -->
+              <button
+                class="relative text-center text-[1.2rem] text-white font-medium bg-gradient-to-b from-[#F370B4] to-[#ec4b9b] px-2 py-2 border-none rounded-lg mt-4 mb-6 hover:bg-gradient-to-b hover:from-[#ec4b9b] hover:to-[#ec4b9b]"
+              >
+                <img
+                  src="../Assets/images/icons/google.svg"
+                  class="absolute top-3.5 left-5"
+                />Continue With Google
+              </button>
+
+              <!-- sign up text -->
+              <p class="text-[#979EAA] font-medium">
+                Don't you have an account?
+                <a href="signup.html" class="text-blue-600">Sign Up</a>
+              </p>
             </div>
           </div>
-        
+        </div>
+
         <!-- right container -->
-        <div class="relative sidebar bg-[#1F2937] hidden lg:block lg:w-[35vw] h-[100vh] overflow-hidden">
-          <img src="../Assets/images/hero-illustration.svg" class="absolute transform scale-[3.2] top-[25%] left-[-100%]">
+        <div
+          class="relative sidebar bg-[#1F2937] hidden lg:block w-[35vw] h-screen overflow-hidden"
+        >
+          <img
+            src="../Assets/images/hero-illustration.svg"
+            class="absolute transform scale-[3.2] top-[10vw] left-[-100%]"
+          />
         </div>
       </section>
     </main>
