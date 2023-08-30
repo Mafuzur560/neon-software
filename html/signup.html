@@ -8,7 +8,6 @@
       href="../Assets/images/icons/favicon.ico"
       type="image/x-icon"
     />
-
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <!-- style for custom font -->
     <style>
       @font-face {
@@ -25,26 +23,22 @@
           url("../Assets/font/uncut_sans_bold.woff") format("woff");
       }
     </style>
-
     <!-- tailwind cdn link  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Signup | NEON</title>
+    <title>Login | NEON</title>
   </head>
+  <body class="bg-[#111827] font-['Inter']">
+    <main>
+      <section class="flex justify-between h-screen">
+        <!-- left container -->
+        <div class="mx-auto">
+          <!-- logo -->
+          <div class="pt-4">
+            <img src="../Assets/images/logo.png" class="w-16" />
+          </div>
 
-  <body class="container mx-auto bg-[#111827] font-['Inter']">
-    <!-- Mafuzur -->
-
-    <main class="">
-      <section class="flex justify-center lg:justify-between h-screen">
-        <!-- Sign up field logo -->
-        <div class="hidden md:block">
-          <a href="../index.html"
-            ><img src="../Assets/images/logo.png" class="w-36"
-          /></a>
-        </div>
-        <div class="flex items-center justify-center scale-75 lg:scale-100">
           <!-- Sign up Container -->
-          <div>
+          <div class="my-[35%]">
             <h1 class="text-white text-[3rem] font-['UncutSans']">Sign Up</h1>
             <div class="flex flex-col w-[23rem]">
               <!-- email input -->
@@ -140,9 +134,14 @@
           </div>
         </div>
 
-        <!-- Banner -->
-        <div class="hidden lg:block">
-          <img src="../Assets/images/hero-illustration.svg" />
+        <!-- right container -->
+        <div
+          class="relative sidebar bg-[#1F2937] hidden lg:block w-[35vw] h-screen overflow-hidden"
+        >
+          <img
+            src="../Assets/images/hero-illustration.svg"
+            class="absolute transform scale-[3.2] top-[10vw] left-[-100%]"
+          />
         </div>
       </section>
     </main>
