@@ -2,11 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./Assets/images/icons/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./Assets/images/icons/favicon.ico" type="image/x-icon" />
   <!-- tailwind cdn link  -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- custom card style -->
+  <style>
+    /* style for custom font */
+    @font-face {
+      font-family: "UncutSans";
+      src: url("../Assets/font/uncut_sans_bold.woff2") format("woff2"),
+        url("../Assets/font/uncut_sans_bold.woff") format("woff");
+    }
+
+    .custom-button-bg {
+      background-image: linear-gradient(#232d3b, #cbd0d6, #232d3b);
+    }
+
+    .custom-social-bg {
+      background-image: linear-gradient(#232d3b, #70767e, #232d3b);
+    }
+
+    .custom-button-bg:hover {
+      transform: rotate(2.5deg);
+      background-image: linear-gradient(#232d3b, #f6f7f8, #232d3b);
+      box-shadow: 0 4px 10px 0px rgba(56, 130, 242, 0.7);
+    }
+
+    .gradient-bg {
+      background-image: linear-gradient(100deg, #2862eb, #ac62c7, #5a4ac7);
+    }
+  </style>
   <title>NEON | Software Company</title>
 </head>
 
@@ -15,11 +46,409 @@
 
   </header>
   <main>
+    <!-- sensitive data section start  -->
+    <section class="bg-[#111827] py-20">
+      <div class="container mx-auto px-4">
+        <div class="sectionWraper flex flex-col justify-center items-center border-b border-[#1F2937]">
+          <!-- section title  -->
+          <div class="sectionTitle w-full md:w-[768px] text-center">
+            <h1 class="font-bold leading-[58px] text-5xl text-[#f3f4f6] mb-4">Use sensitive data without sacrificing
+              privacy
+            </h1>
+            <p class="text-[#9ca3af] text-xl leading-8">Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui
+              officia deserunt mollit anim id est.</p>
+          </div>
+          <!-- side blur image  -->
+          <div class="sideImg w-full relative">
+            <img src="./Assets/images/features-illustration.svg" class="absolute top-[-25rem] right-[-170px]">
+          </div>
+          <!-- down main section all content  -->
+          <div class="sensitiveDataDetails flex flex-col-reverse md:flex-row justify-between items-center gap-8 my-20">
+            <!-- left content all text  -->
+            <div class="contentWrap w-full md:w-[500px]">
+              <div class="title space-y-5 w-full">
+                <h2 class="text-[#f3f4f6] w-full font-bold text-4xl leading-[46px]">Standardized dev
+                  environments</h2>
+                <p class="w-full text-[#9ca3af] text-xl leading-[30px]">Lorem ipsum dolor sit amet
+                  consectetur adipisicing
+                  elit.
+                  Sed iusto, earum quisquam quasi tempore minus expedita sint aliquid consequatur culpa.</p>
+                <div class="sensitiveDataList space-y-3">
+                  <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                      class="text-[#9ca3af] text-xl">Performance reviews</span></p>
+                  <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                      class="text-[#9ca3af] text-xl">Performance reviews</span></p>
+                  <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                      class="text-[#9ca3af] text-xl">Performance reviews</span></p>
+                </div>
+              </div>
 
+            </div>
+            <!-- right content image -->
+            <div class="img">
+              <img src="./Assets/images/features-02.png" class="w-full md:w-[540px]">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sensitive data section end -->
+    <!-- pricing plan section start  -->
+    <section class="bg-[#111827]">
+      <div class="container mx-auto px-4">
+        <div class="sectionWraper flex flex-col justify-center items-center">
+          <!-- section title reuseable  -->
+          <div class="sectionTitle w-full md:w-[768px] text-center">
+            <h1 class="font-bold leading-[58px] text-5xl text-[#f3f4f6] mb-4">Find a plan that's right for you</h1>
+            <p class="text-[#9ca3af] text-xl leading-8">Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est.</p>
+          </div>
+          <!-- pricing plan section  -->
+          <div
+            class="pricingWraper flex flex-col lg:flex-row justify-between items-start gap-20 py-10 bg-[url('./Assets/images/circleradius.png')] bg-center">
+            <!-- stater pricing plan  -->
+            <div class="stater space-y-5 p-8">
+              <h1 class="text-[#F3F4F6] text-xl font-semibold">Stater</h1>
+              <p class="text-[#F3F4F6] font-semibold text-4xl"><span class="text-[#9CA3AF]">$</span>49<sub>/mo</sub></p>
+              <p class="text-[#9ca3af] text-xl">For teams building apps for many public & private users.</p>
+              <button
+                class="flex gap-4 justify-center items-center w-full text-white font-medium p-2 bg-gradient-to-b from-gray-400 to-blue-600 hover:from-blue-600 hover:to-blue-600 my-4 rounded">Start
+                Free Trial<span>
+                  <img src="./Assets/images/icons/arrow.svg" alt="arrow" class="w-4">
+                </span></button>
+              <p class="text-white text-xl">Features include:</p>
+              <div class="pricingList space-y-3">
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Unlimited placeholder texts</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Consectetur adipiscing elit</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Excepteur sint occaecat cupidatat</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Officia deserunt mollit anim</span></p>
+              </div>
+            </div>
+            <!-- stater Business plan  -->
+            <div class="stater space-y-5 bg-[#1F2937] p-8">
+              <h1 class="text-[#F3F4F6] text-xl font-semibold">Business</h1>
+              <p class="text-[#F3F4F6] font-semibold text-4xl"><span class="text-[#9CA3AF]">$</span>79<sub>/mo</sub></p>
+              <p class="text-[#9ca3af] text-xl">For teams building apps for many public & private users.</p>
+              <button
+                class="flex gap-4 justify-center items-center w-full text-white font-medium p-2 bg-gradient-to-b from-gray-400 to-blue-600 hover:from-blue-600 hover:to-blue-600 my-4 rounded">Start
+                Free Trial<span>
+                  <img src="./Assets/images/icons/arrow.svg" alt="arrow" class="w-4">
+                </span></button>
+              <p class="text-white text-xl">Everything in Starter, plus:</p>
+              <div class="pricingList space-y-3">
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Consectetur adipiscing elit</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Consectetur adipiscing elit</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Excepteur sint occaecat cupidatat</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Officia deserunt mollit anim</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Excepteur sint occaecat cupidatat</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Officia deserunt mollit anim</span></p>
+              </div>
+            </div>
+            <!-- stater Enterprise plan  -->
+            <div class="stater space-y-5 p-8">
+              <h1 class="text-[#F3F4F6] text-xl font-semibold">Enterprise</h1>
+              <p class="text-[#F3F4F6] font-semibold text-4xl"><span class="text-[#9CA3AF]">$</span>129<sub>/mo</sub>
+              </p>
+              <p class="text-[#9ca3af] text-xl">For teams building apps for many public & private users.</p>
+              <button
+                class="flex gap-4 justify-center items-center w-full text-white font-medium p-2 bg-gradient-to-b from-gray-400 to-blue-600 hover:from-blue-600 hover:to-blue-600 my-4 rounded">Start
+                Free Trial<span>
+                  <img src="./Assets/images/icons/arrow.svg" alt="arrow" class="w-4">
+                </span></button>
+              <p class="text-white text-xl">Features include:</p>
+              <div class="pricingList space-y-3">
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Unlimited placeholder texts</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Consectetur adipiscing elit</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Excepteur sint occaecat cupidatat</span></p>
+                <p class="flex gap-4"><img src="./Assets/images/check.svg" class="w-3"> <span
+                    class="text-[#9ca3af] text-xl">Officia deserunt mollit anim</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pricing plan section end -->
+    <!-- Shahin is working on "Sound too good?" Section-->
+    <section class="bg-[#111827] py-12">
+      <div class="container mx-auto">
+        <h1 class="font-bold text-[3rem] text-white text-center md:max-w-[50rem] mx-auto mb-12">
+          Sound too good? Hear what our customers have to say
+        </h1>
+        <!-- customer review cards -->
+        <div class="card-container flex justify-center items-center gap-[1.5rem] mt-[1.5rem] flex-wrap">
+          <!-- card-1 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-01.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Compared to other offerings, Neon always has a head start and
+              introduces bleeding edge features first.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Licia McFarland -
+              <span class="text-blue-600 cursor-pointer">Paytable</span>
+            </p>
+          </div>
+          <!-- card-2 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-02.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Neon has made a huge impact on compliance, while helping us
+              become more transparent.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Patrick Mills -
+              <span class="text-blue-600 cursor-pointer">AppDonkey</span>
+            </p>
+          </div>
+          <!-- card-3 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-03.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              GitHub provides tools that are, in a sense, invisible. You don’t
+              have to waste time trying to get them to work.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              David Collison -
+              <span class="text-blue-600 cursor-pointer">BrainTwo</span>
+            </p>
+          </div>
+          <!-- card-4 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-04.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Neon is the tool devs. The more you can make work feel native
+              for a developer, the more cool their experience.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Licia McFarland -
+              <span class="text-blue-600 cursor-pointer">Paytable</span>
+            </p>
+          </div>
+          <!-- card-5 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-05.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Neon comes into play during the entire software life cycle. It’s
+              the de facto tool for anything related to our software.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Rossana Alecu -
+              <span class="text-blue-600 cursor-pointer">Bolt Money</span>
+            </p>
+          </div>
+          <!-- card-6 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-06.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              I have no tech skills and with Neon I can actually make good
+              looking apps with ease.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Max Corsano -
+              <span class="text-blue-600 cursor-pointer">MixTech</span>
+            </p>
+          </div>
+        </div>
+        <!-- last three card with overlay effect -->
+        <div class="relative flex justify-center items-center gap-[1.5rem] mt-[1.5rem] flex-wrap">
+          <!-- card-7 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-07.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              It's not just easier to get in touch with developers, it’s also
+              easier to bring in other team members.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Anna Pratt -
+              <span class="text-blue-600 cursor-pointer">Cloud Inc</span>
+            </p>
+          </div>
+          <!-- card-8 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-08.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Tools like Neon Advanced Security help keep our team lean. It
+              makes us much more efficient.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Veerle Larson -
+              <span class="text-blue-600 cursor-pointer"> Prinso</span>
+            </p>
+          </div>
+          <!-- card-9 -->
+          <div class="space-y-3 w-[90%] md:max-w-[28rem] p-5 bg-[#1F2937]">
+            <img src="./Assets/images/testimonial-09.jpg" class="rounded-full w-[3.5rem]" />
+            <p class="text-[#8A99A8] font-normal text-[1rem] max-w-[18rem]">
+              Neon enables speed and scale. We can work on bigger projects and
+              finish them faster.
+            </p>
+            <p class="text-white font-normal text-[1rem]">
+              Ana Kennedy -
+              <span class="text-blue-600 cursor-pointer">Syntax Inc</span>
+            </p>
+          </div>
+          <!-- for overlay effect -->
+          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#111827]"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Shahin is also working on "Resources to help" Section-->
+    <section class="bg-[#111827] py-12">
+      <div class="container mx-auto">
+        <h1 class="font-bold text-[3rem] text-white text-center max-w-[48rem] mx-auto mb-12">
+          Resources to help you get the most out of Neon
+        </h1>
+        <!-- buttons container -->
+        <div class="flex justify-center items-center gap-5 flex-wrap">
+          <!-- button 1 -->
+          <div class="custom-button-bg w-[170px] h-[45px] text-center p-[2px] rounded-[50px] transition">
+            <button
+              class="custom-button w-full h-full text-center flex items-center justify-center bg-[#1F2937] rounded-[50px]">
+              <span class="text-lg text-[#999B9E] hover:text-[#3A82F6] font-medium">For Developers</span>
+            </button>
+          </div>
+          <!-- button 2 -->
+          <div class="custom-button-bg w-[170px] h-[45px] text-center p-[2px] rounded-[50px] transition">
+            <button
+              class="custom-button w-full h-full text-center flex items-center justify-center bg-[#1F2937] rounded-[50px]">
+              <span class="text-lg text-[#999B9E] hover:text-[#3A82F6] font-medium">For Designers</span>
+            </button>
+          </div>
+          <!-- button 3 -->
+          <div class="custom-button-bg w-[170px] h-[45px] text-center p-[2px] rounded-[50px] transition">
+            <button
+              class="custom-button w-full h-full text-center flex items-center justify-center bg-[#1F2937] rounded-[50px]">
+              <span class="text-lg text-[#999B9E] hover:text-[#3A82F6] font-medium">For Founders</span>
+            </button>
+          </div>
+          <!-- button 4 -->
+          <div class="custom-button-bg w-[170px] h-[45px] text-center p-[2px] rounded-[50px] transition">
+            <button
+              class="custom-button w-full h-full text-center flex items-center justify-center bg-[#1F2937] rounded-[50px]">
+              <span class="text-lg text-[#999B9E] hover:text-[#3A82F6] font-medium">For Marketers</span>
+            </button>
+          </div>
+        </div>
+        <!-- social links Container-->
+        <div class="my-20 flex justify-center items-center gap-6 flex-wrap">
+          <!-- social card 1 -->
+          <div class="px-5 py-8 w-[90%] md:w-[18.75rem] bg-[#1f2937] space-y-4">
+            <div class="custom-social-bg rounded-full w-[48px] h-[48px] p-[4px]">
+              <div class="w-full h-full bg-[#232D3B] rounded-full flex justify-center items-center">
+                <img src="Assets/images/icons/telegram.svg" />
+              </div>
+            </div>
+            <h4 class="text-white font-bold text-[22px]">Neon Telegram</h4>
+          </div>
+          <!-- social card 2 -->
+          <div class="px-5 py-8 w-[90%] md:w-[18.75rem] bg-[#1f2937] space-y-4">
+            <div class="custom-social-bg rounded-full w-[48px] h-[48px] p-[4px]">
+              <div class="w-full h-full bg-[#232D3B] rounded-full flex justify-center items-center">
+                <img src="Assets/images/icons/github.svg" />
+              </div>
+            </div>
+            <h4 class="text-white font-bold text-[22px]">Neon Github</h4>
+          </div>
+          <!-- social card 3 -->
+          <div class="px-5 py-8 w-[90%] md:w-[18.75rem] bg-[#1f2937] space-y-4">
+            <div class="custom-social-bg rounded-full w-[48px] h-[48px] p-[4px]">
+              <div class="w-full h-full bg-[#232D3B] rounded-full flex justify-center items-center">
+                <img src="Assets/images/icons/docs.svg" />
+              </div>
+            </div>
+            <h4 class="text-white font-bold text-[22px]">Neon Docs</h4>
+          </div>
+          <!-- social card 4 -->
+          <div class="px-5 py-8 w-[90%] md:w-[18.75rem] bg-[#1f2937] space-y-4">
+            <div class="custom-social-bg rounded-full w-[48px] h-[48px] p-[4px]">
+              <div class="w-full h-full bg-[#232D3B] rounded-full flex justify-center items-center">
+                <img src="Assets/images/icons/video.svg" />
+              </div>
+            </div>
+            <h4 class="text-white font-bold text-[22px]">Neon Tutorials</h4>
+          </div>
+        </div>
+        <!-- gradient banner -->
+        <div class="gradient-bg w-[90%] lg:w-[83%] mx-auto p-10 py-16 rounded-lg flex flex-wrap justify-between">
+          <div class="space-y-6">
+            <h1 class="text-white text-4xl font-bold">
+              Get started with Neon
+            </h1>
+            <p class="font-medium text-lg text-[#BBD0FD]">
+              It only takes a few minutes to get started with Neon. Understand
+              your users, start free, today.
+            </p>
+          </div>
+          <div>
+            <button
+              class="text-center text-[1.2rem] text-white font-medium bg-gradient-to-b from-[#5EA2F9] to-[#2A68EC] px-5 py-[5%] border-none rounded-lg flex justify-center items-center gap-3 my-4 hover:bg-gradient-to-b hover:from-[#2A68EC] hover:to-[#2A68EC] shadow-lg">
+              Get Started
+              <img class="relative hover:left-2" src="../Assets/images/icons/arrow.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-
+  <footer class="bg-[#111827] pb-10">
+    <!-- footer-container -->
+    <section
+      class="container mx-auto flex md:flex-row md:flex-wrap lg:gap-0 flex-col gap-5 justify-between items-start px-[7%]">
+      <!-- links group 1 -->
+      <div class="">
+        <img src="Assets/images/logo.png" class="w-[4rem]" />
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Terms -</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Privacy Policy</a>
+      </div>
+      <!-- links group 2 -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-white font-semibold">PRODUCTS</h1>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Neon Manage</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Neon Analysis</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Neon Launch</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Experimentation</a>
+      </div>
+      <!-- links group 3 -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-white font-semibold">RESOURCES</h1>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Blog</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Cheat Sheet</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Channel Partner</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Affiliate Program</a>
+      </div>
+      <!-- links group 4 -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-white font-semibold">COMPARE</h1>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Session Recording</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Feature Flags</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Heat Maps</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Correlation Analysis</a>
+      </div>
+      <!-- links group 5 -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-white font-semibold">COMPANY</h1>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Work With Us</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Our Story</a>
+        <a href="" class="text-[#979EAA] font-medium hover:text-blue-600">Work With Us</a>
+      </div>
+    </section>
   </footer>
+  <script src="js/custom-button.js"></script>
 </body>
 
 </html>
